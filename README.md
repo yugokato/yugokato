@@ -1,9 +1,9 @@
 ```python
-from api_client_core import APIBase, endpoint
+from api_client_core import BaseAPI, endpoint
 from api_client_core.types import RestResponse
 
 
-class UsersAPI(APIBase):
+class UsersAPI(BaseAPI):
     
     @endpoint.get("/v1/users/{username}")
     def get_user(self, username: str) -> RestResponse:
@@ -23,6 +23,4 @@ class UsersAPI(APIBase):
   "status": "Automating everything",
   "ai_augmented": true
 }
->>> type(client.Users.get_user)
-<class 'UsersAPIGetUserEndpointFunc'>
 ```
