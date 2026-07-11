@@ -5,7 +5,7 @@ from api_client_core.types import RestResponse
 
 class UsersAPI(BaseAPI):
     
-    @endpoint.get("/v1/users/{username}")
+    @endpoint.get("/users/{username}")
     def get_user(self, username: str) -> RestResponse:
         ...
 ```
@@ -19,8 +19,13 @@ class UsersAPI(BaseAPI):
   "username": "yugokato",
   "role": "Senior Python SDET",
   "location": "Portland, OR",
-  "specialties": ["Python", "Test Automation", "Framework Development", "QA Tooling", "CI/CD"],
-  "status": "Automating everything",
-  "ai_augmented": true
+  "specialties": [
+    "Python",
+    "Test Automation",
+    "Framework Development",
+    "Infrastructure & Tooling",
+    "CI/CD"
+  ],
+  "status": "Automating everything"
 }
 ```
