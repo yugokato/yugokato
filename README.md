@@ -23,7 +23,7 @@ class UsersAPI(BaseAPI):
     "Python",
     "Test Automation",
     "Framework Development",
-    "Infrastructure & Tooling",
+    "Tools & Infrastructure",
     "CI/CD"
   ],
   "status": "Automating everything"
