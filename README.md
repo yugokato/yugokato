@@ -12,7 +12,7 @@ class UsersAPI(BaseAPI):
 
 ```pycon
 >>> client = MyAPIClient()
->>> r = client.Users.get_user("yugokato")
+>>> r = client.users.get_user("yugokato")
 >>> assert r.status_code == 200
 >>> r.response
 {
